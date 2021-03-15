@@ -5,11 +5,7 @@ const socket = require('socket.io');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const server = app.listen(PORT, ()=>{
-    console.log('listening', {
-        cors: {
-          origin: '*',
-        }
-      })
+    console.log('listening')
 })
 
 app.use(express.static('public'));
